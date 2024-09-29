@@ -42,6 +42,8 @@ section {
   width: 100%;
   max-width: 1000px;
   margin: auto;
+  background-color: #f4f4f4;
+  border-radius: 8px;
 }
 
 h2 {
@@ -80,7 +82,7 @@ hr {
   color: lightgreen;
 }
 
-/* Footer */
+/* FOOTER */
 
 footer {
   background-color: #333;
