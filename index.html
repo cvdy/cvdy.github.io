@@ -1,55 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Portfolio of Cody Dreese</title>
     <link rel="stylesheet" href="styles.css" />
+    <title>Cody Dreese</title>
   </head>
   <body>
-    <header>
-      <h1>Cody Dreese</h1>
-      <p>
-        Hey! I'm Cody Dreese, an aspiring Front-End Web Developer and Tech
-        Enthusiast.
-      </p>
-    </header>
-
-    <section>
-      <h2>About Me</h2>
-      <section>
-        <h2>My Passion</h2>
-        <p>
-          Hello! I'm Cody Dreese, a passionate front-end web developer in the
-          making. I love creating visually stunning and user-friendly websites.
-          Currently, I'm honing my skills in HTML, CSS, and JavaScript to build
-          responsive, accessible, and engaging web experiences. My journey in
-          web development is driven by a desire to craft innovative digital
-          solutions while keeping the user in focus.
-        </p>
-        <p>
-          I'm constantly learning and evolving, with a strong interest in
-          frameworks like React and modern design principles. When I'm not
-          coding, I enjoy exploring new technologies and improving my craft.
-        </p>
-      </section>
-    </section>
-
-    <section>
-      <h2>Projects</h2>
-      <ul>
-        <li>
-          <a href="https://cvdy.github.io/fcc/">fCC Certification Projects</a> -
-          The curriculum given on fCC, recreated by me to test my knowledge of
-          the information.
-        </li>
-        <li><a href="#">Untitled</a> - Brief description of the project.</li>
-      </ul>
-    </section>
-
-    <footer>
-      <p>Connect with me on <a href="https://github.com/cvdy">GitHub</a></p>
-    </footer>
+    <div class="page-wrap">
+      <div class="content-wrap">
+        <header>
+          <h1 class="name">Cody Dreese</h1>
+          <p class="desc">Frontend Web Developer</p>
+        </header>
+        <section>
+          <div class="about">
+            <h2>About Me</h2>
+            <hr />
+            <p class="content-p">
+              I'm focused on creating user-friendly web experiences. I enjoy
+              turning ideas into functional, modern websites while continually
+              learning new technologies.
+            </p>
+          </div>
+          <div class="projects">
+            <h2>Projects</h2>
+            <hr />
+            <div class="project-section">
+              <p>
+                <a class="content-link" href="http://cvdy.github.io/fcc"
+                  >freeCodeCamp Certification Projects</a
+                >
+              </p>
+              <p class="content-p">
+                All the required projects to gain the freeCodeCamp
+                Certification.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer>
+        <div class="socials">
+          <ul>
+            <li><a target="_blank" href="https://dev.to/cvdy">Dev</a></li>
+            <li>
+              <a target="_blank" href="https://github.com/cvdy">GitHub</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.linkedin.com/in/cvdy/"
+                >LinkedIn</a
+              >
+            </li>
+            <li><a target="_blank" href="https://x.com/codydreese">X</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
