@@ -1,61 +1,105 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type='text/css' href="styles.css" />
     <title>Cody Dreese</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="page-wrap">
-      <div class="content-wrap">
-        <header>
-          <h1 class="name">Cody Dreese</h1>
-          <p class="desc">Frontend Web Developer</p>
-        </header>
-        <section>
-          <div class="about">
-            <h2>About Me</h2>
-            <hr />
-            <p class="content-p">
-              I'm focused on creating user-friendly web experiences. I enjoy
-              turning ideas into functional, modern websites while continually
-              learning new technologies.
-            </p>
-          </div>
-          <div class="projects">
-            <h2>Projects</h2>
-            <hr />
-            <div class="project-section">
-              <p>
-                <a class="content-link" href="http://cvdy.github.io/fcc"
-                  >freeCodeCamp Certification Projects</a
-                >
-              </p>
-              <p class="content-p">
-                All the required projects to gain the freeCodeCamp
-                Certification.
-              </p>
-            </div>
-          </div>
-        </section>
+    <header>
+      <div class="container">
+        <h1>Hi, I'm <span class="highlight">Cody Dreese</span></h1>
+        <p>
+          I'm a front-end web developer specializing in creating beautiful and
+          functional web experiences.
+        </p>
+        <a href="#projects" class="btn">View My Work</a>
       </div>
-      <footer>
-        <div class="socials">
-          <ul>
-            <li><a target="_blank" href="https://dev.to/cvdy">Dev</a></li>
-            <li>
-              <a target="_blank" href="https://github.com/cvdy">GitHub</a>
-            </li>
-            <li>
-              <a target="_blank" href="https://www.linkedin.com/in/cvdy/"
-                >LinkedIn</a
-              >
-            </li>
-            <li><a target="_blank" href="https://x.com/codydreese">X</a></li>
-          </ul>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="about" class="about">
+        <div class="container">
+          <h2>About Me</h2>
+          <p>
+            I'm a passionate web developer with a love for creating responsive,
+            user-friendly websites. My journey began with a fascination for
+            technology and grew into a career that allows me to solve problems
+            and craft intuitive user experiences. I have experience working with
+            HTML, CSS, JavaScript, and popular frameworks like React.
+          </p>
         </div>
-      </footer>
-    </div>
+      </section>
+
+      <section id="projects" class="projects">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="project-item">
+            <h3>Project 1: Portfolio Website</h3>
+            <p>
+              A personal portfolio website built using simply HTML and CSS. This
+              project showcases my front-end development skills and has a fully
+              responsive design.
+            </p>
+            <a href="#" target="_blank">View Project</a>
+          </div>
+          <div class="project-item">
+            <h3>Project 2: To-Do List App</h3>
+            <p>
+              A to-do list application built using JavaScript and React, with
+              features like adding, editing, and removing tasks. It helps manage
+              daily tasks efficiently.
+            </p>
+            <a href="#" target="_blank">View Project</a>
+          </div>
+          <div class="project-item">
+            <h3>Project 3: Responsive Landing Page</h3>
+            <p>
+              A responsive landing page for a fictional product or service,
+              designed using Flexbox and CSS Grid, ensuring compatibility across
+              all devices.
+            </p>
+            <a href="#" target="_blank">View Project</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2>Contact Me</h2>
+          <form action="" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 Cody Dreese. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
